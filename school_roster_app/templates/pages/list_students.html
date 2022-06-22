@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Students</title>
+</head>
+<body>
+    <div>
+        {%  if student %}
+        <ul>
+            {% for student_member in student %}
+            <li>
+                Staff name: {{ student_member.name }}
+            </li>
+                <div>
+                <p>role: {{ student_member.role }}</p>
+                <p>age: {{ student_member.age }}</p>
+                <p>ID: {{ student_member.school_id }}</p>
+                <p>password: {{ student_member.password }}</p>
+                </div>
+
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>
+            No Students at this school...
+        </p>
+    {% endif %}
+    </div>
+</body>
+</html>

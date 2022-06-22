@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Staff By ID</title>
+</head>
+<body>
+    <div>
+        {%  if staff %}
+            <ul>
+                <li>
+                    Staff name: {{ staff.name }}
+                </li>
+                    <div>
+                    <p>role: {{ staff.role }}</p>
+                    <p>age: {{ staff.age }}</p>
+                    <p>ID: {{ staff.school_id }}</p>
+                    <p>password: {{ staff.password }}</p>
+                    </div>
+            </ul>
+        {% else %}
+            <p>
+                No Staff Member by that ID.
+            </p>
+        {% endif %}
+    </div>
+</body>
+</html>

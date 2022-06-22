@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School Page</title>
+</head>
+<body>
+    <h2>{{ school_name }} Directory</h2>
+    <li>
+        <a href={% url 'list_staff' %}>
+            All Staff
+        </a>
+    </li>
+    <li>
+        <a href={% url 'list_students' %}>
+            All Students
+        </a>
+    </li>
+    <li>
+        <a href={% url 'staff_detail' employee_id=0 %}>
+            Staff by ID
+        </a>
+    </li>
+    <li>
+        <a href={% url 'student_detail' student_id=0 %}>
+            Student by ID
+        </a>
+    </li>
+</body>
+</html>

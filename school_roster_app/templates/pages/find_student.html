@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Student By ID</title>
+</head>
+<body>
+    <div>
+        {%  if student %}
+        <ul>
+            <li>
+                Student name: {{ student.name }}
+            </li>
+                <div>
+                <p>role: {{ student.role }}</p>
+                <p>age: {{ student.age }}</p>
+                <p>ID: {{ student.school_id }}</p>
+                <p>password: {{ student.password }}</p>
+                </div>
+        </ul>
+    {% else %}
+        <p>
+            No Student Member by that ID..
+        </p>
+    {% endif %}
+    </div>
+</body>
+</html>

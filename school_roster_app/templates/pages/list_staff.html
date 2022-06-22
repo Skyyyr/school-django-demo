@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Staff</title>
+</head>
+<body>
+    <div>
+        {%  if staff %}
+        <ul>
+            {% for staff_member in staff %}
+            <li>
+                Staff name: {{ staff_member.name }}
+            </li>
+                <div>
+                <p>role: {{ staff_member.role }}</p>
+                <p>age: {{ staff_member.age }}</p>
+                <p>ID: {{ staff_member.employee_id }}</p>
+                <p>password: {{ staff_member.password }}</p>
+                </div>
+
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>
+            No Staff Members
+        </p>
+    {% endif %}
+    </div>
+</body>
+</html>
