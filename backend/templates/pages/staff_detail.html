@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Details</title>
+</head>
+<body>
+
+    {% if staff_member %}
+        <div>
+            STAFF NAME: {{ staff_member.name }}
+        </div>
+        <div>
+            STAFF AGE: {{ staff_member.age }}
+        </div>
+    {% else %}
+        This ID is not valid
+    {% endif %}
+</body>
+</html>

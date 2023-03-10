@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+<body>
+
+    {% if student %}
+        STUDENT NAME: {{ student.name }}
+        STUDENT AGE: {{ student.age }}
+    {% else %}
+        This ID is not valid
+    {% endif %}
+
+</body>
+</html>
